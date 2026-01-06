@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigatie (menu) */
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    height: 50px;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;   /* geen onderlijning */
+    color: #002fa7;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/*mainpage*/
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+div:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+main {
+    display: flex;
+    gap: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: auto; /* neemt bovenaan (margin-top) de beschikbare ruimte in */
+}
+
+span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Bricolage Grotesque, sans-serif;
+    color: #002fa7;
+}
+
+.number {
+    font-weight: lighter;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+section {
+    min-width: 230px;
+}
