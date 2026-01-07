@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigatie (menu) */
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    height: 50px;
+    padding-right: 2rem;
+    align-items: center;
+
+    /*background-color: yellow;*/
+}
+
+nav a {
+    text-decoration: none;   /* geen onderlijning */
+    color: #002fa7;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/*titel*/
+h2 {
+    font-family: Bricolage Grotesque, HelveticaNeue, sans-serif;
+    color: #002fa7;
+    font-weight: bolder;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0; /* op h1, h2 etc elementen wordt automatich een margin erop gezet, zelft wanneer je een wildcardselector gebruikt*/
+
+    /*background-color: lightskyblue;*/
+
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section img {
+    width: 100%;        /* vult de div */
+    height: auto;       /* behoudt verhouding */
+}

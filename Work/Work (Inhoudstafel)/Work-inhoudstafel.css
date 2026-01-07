@@ -64,3 +64,7 @@ body {
 section {
     min-width: 230px;
 }
+
+a {
+    text-decoration: none;
+}
