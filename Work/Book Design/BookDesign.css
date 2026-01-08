@@ -58,7 +58,52 @@ section {
     padding-right: 2rem;
 }
 
+section:not(:first-child) {
+    padding-bottom: 2rem;
+}
+
 section img {
     width: 100%;        /* vult de div */
     height: auto;       /* behoudt verhouding */
+}
+
+/* Hovereffect */
+.image-container {
+    position: relative;
+    display: inline-block; /* zorgt dat de container (div) zo groot is als de inhoud (afbeelding) */
+}
+
+.image-container img {
+    display: block; /* voorkomt ongewenste witruimte onder de afbeelding*/
+}                   /* zorgt dat width/height logisch werkt */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 47, 167, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    /* content (tekst) centreren*/
+    display: flex;
+    justify-content: center; /* horizontaal */
+    align-items: center;     /* verticaal */
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+h3 {
+    color: white;
+    font-family: Bricolage Grotesque, HelveticaNeue, sans-serif;
+}
+
+/* klikbaar*/
+.image-link {
+    text-decoration: none;
+    display: inline-block; /* zorgt dat de link zich gedraagt als een blok, zodat de hele afbeelding klikbaar is */
 }
