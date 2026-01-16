@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: Bricolage Grotesque, HelveticaNeue, sans-serif;
+    color: #002fa7;
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: Bricolage Grotesque, HelveticaNeue, sans-serif;
+    color: #002fa7;
+    font-weight: bolder;
+}
+
+h4 {
+    font-family: Bricolage Grotesque, HelveticaNeue, sans-serif;
+    color: #002fa7;
+    font-weight: bolder;
+}
+
+p {
+    font-family: Bricolage Grotesque, HelveticaNeue, sans-serif;
+    color: black;
+    max-width: 650px;
+}
+
+main {
+    padding: 1rem 2rem 2rem;
+}
+
+h2, h3, h4 {
+    padding-top: 1rem;
+}
+

@@ -42,8 +42,8 @@ main {
 }
 
 .profile {
-    width: 349px;
-    height: 349px;
+    width: 450px;
+    height: 450px;
     position: relative;
     overflow: hidden;
 
@@ -63,8 +63,8 @@ p {
 }
 
 .profile {
-    width: 349px;
-    height: 349px;
+    width: 450px;
+    height: 450px;
     position: relative;
 }
 
@@ -80,3 +80,58 @@ p {
 .profile:hover img {
     opacity: 1;
 }
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        gap: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    main {
+        align-items: flex-start; /* niet meer verticaal centreren */
+        padding-top: 2rem;
+    }
+
+    .profile {
+        width: 100%;
+        height: auto;          /* hoogte niet forceren */
+        position: static;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile img {
+        position: static;      /* niet meer absoluut */
+        opacity: 1;            /* altijd zichtbaar */
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        padding-bottom: 2rem;
+    }
+
+    .profile:hover img {
+        opacity: 1;            /* hover volledig geneutraliseerd */
+    }
+
+    .text p {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .text p:not(:first-child) {
+        padding-bottom: 2rem;
+    }
+}
+
